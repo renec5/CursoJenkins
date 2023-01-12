@@ -1,4 +1,4 @@
-job('ejemplo2-job-DSL') {
+ljob('ejemplo2-job-DSL') {
 	description('Job DSL de ejemplo para el curso de Jenkins')
   	scm {
       		git('https://github.com/macloujulian/jenkins.job.parametrizado.git', 'main') { node ->
@@ -18,6 +18,6 @@ job('ejemplo2-job-DSL') {
     		shell("bash jobscript.sh")
     	}
   	publishers {
-      		mailer('macloujulian@gmail.com', true, true)
+      		mailer('evilsnake_@hotmail.com', true, true)
     	}
 }
